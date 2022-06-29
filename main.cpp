@@ -99,37 +99,7 @@ public:
                 pt->processResult(startTime, endTime);
             }
 
-            // } else if(algorithm == 3) {
-            //     pt->setAlgorithmName("IS Optimized");
-            //     for(int i = 0; i < this->testsetSize; i++) {
-            //         int testArray[this->arrayLength];
-            //         std::memcpy(testArray, this->baseArray + (this->arrayLength * i), this->arrayLength * sizeof(int));
-            //         auto startTime = std::chrono::high_resolution_clock::now();
-            //         insertionSortOptimized(testArray, this->arrayLength, true);
-            //         auto endTime = std::chrono::high_resolution_clock::now();
-            //         pt->processResult(startTime, endTime);
-            //     }
 
-            // } else if(algorithm == 4) {
-            //     pt->setAlgorithmName("IS Recursive");
-            //     for(int i = 0; i < this->testsetSize; i++) {
-            //         int testArray[this->arrayLength];
-            //         std::memcpy(testArray, this->baseArray + (this->arrayLength * i), this->arrayLength * sizeof(int));
-            //         auto startTime = std::chrono::high_resolution_clock::now();
-            //         insertionSortRecursive(testArray, this->arrayLength, true);
-            //         auto endTime = std::chrono::high_resolution_clock::now();
-            //         pt->processResult(startTime, endTime);
-            //     }
-            // } else if(algorithm == 5) {
-            //     pt->setAlgorithmName("MergeSort");
-            //     for(int i = 0; i < this->testsetSize; i++) {
-            //         int testArray[this->arrayLength];
-            //         std::memcpy(testArray, this->baseArray + (this->arrayLength * i), this->arrayLength * sizeof(int));
-            //         auto startTime = std::chrono::high_resolution_clock::now();
-            //         mergeSort(testArray, 0, this->arrayLength - 1);
-            //         auto endTime = std::chrono::high_resolution_clock::now();
-            //         pt->processResult(startTime, endTime);
-            //     }
 
         } else {
             std::cerr << "Algorithm not recognized!" << std::endl;
@@ -163,8 +133,7 @@ public:
 int main() {
     srand(time(NULL));
 
-    //int array[] = {5, 9, 1, 2, 8, 6, 7, 3, 5, 3, 13, 17, 29};
-    //int array2[] = {5, 9, 1, 2, 8, 6, 7, 3, 5, 3, 13, 17, 29};
+   
     int array[ARRAYLENGTH];
     int array2[ARRAYLENGTH];
 

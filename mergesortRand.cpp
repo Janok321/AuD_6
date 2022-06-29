@@ -49,10 +49,6 @@ void mergeSort(int array[], int left, int right) {
     }
 }
 
-//-----------------------------------------------------------------
-// Mergesort mit Teilung an Zufallszahl"
-//-----------------------------------------------------------------
-
 void mergeRand(int* array, int left, int middle, int right) {
     
     int n1 = middle - left + 1;
@@ -96,11 +92,7 @@ void mergeRand(int* array, int left, int middle, int right) {
 void mergesortRand(int* array, int left, int right) {
     if(left < right) {
 
-        // "Zufällige Mitte" -> Soll im Bereich ganz links des (Teil-)Arrays bis ganz rechts des Teil-(Arrays) liegen
         int middle = left + rand() % ((right-left)+1);
-
-        // Standard Mergesort
-        // int middle = left+(right-left)/2;
 
         mergesortRand(array, left, middle);
         mergesortRand(array, middle+1, right);
